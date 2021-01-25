@@ -9,15 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
+# Sakura build flags
+SAKURA_MAINTAINER := H3M3L
+SAKURA_BUILD_TYPE := gapps
+
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
 # Inherit some common Sakura stuff.
-SAKURA_BUILD_TYPE=gapps
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from custom vendor
 #$(call inherit-product, vendor/MiuiCamera/config.mk)
+
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
