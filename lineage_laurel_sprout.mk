@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
 
-# Inherit some common Potato stuff.
-WITH_GAPPS := true
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+# Inherit some common Sakura stuff.
+SAKURA_BUILD_TYPE=gapps
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from custom vendor
 #$(call inherit-product, vendor/MiuiCamera/config.mk)
@@ -26,7 +26,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := potato_laurel_sprout
+PRODUCT_NAME := lineage_laurel_sprout
 PRODUCT_DEVICE := laurel_sprout
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A3
