@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Sakura build flags
 SAKURA_MAINTAINER := H3M3L
 SAKURA_BUILD_TYPE := gapps
+SAKURA_OPLAUNCHER=true
 
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
@@ -44,7 +45,7 @@ SKIP_ABI_CHECKS := true
 # FOD Animation
 EXTRA_FOD_ANIMATIONS := true
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="laurel_sprout-user 10 QKQ1.190910.002 V11.0.15.0.QFQMIXM release-keys" \
