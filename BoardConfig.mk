@@ -61,9 +61,11 @@ TARGET_KERNEL_CLANG_VERSION := proton
 KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin/aarch64-linux-gnu-
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/Image.gz-dtb
+TARGET_KERNEL_CONFIG := vendor/laurel_sprout-perf_defconfig
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_HEADERS := kernel/xiaomi/laurel_sprout
 TARGET_KERNEL_SOURCE := kernel/xiaomi/laurel_sprout
+TARGET_FORCE_PREBUILT_KERNEL := device/xiaomi/laurel_sprout/prebuilts/Image.gz-dtb
 
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true
