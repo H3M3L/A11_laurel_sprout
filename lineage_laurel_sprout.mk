@@ -12,7 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Sakura build flags
 SAKURA_MAINTAINER := H3M3L
 SAKURA_BUILD_TYPE := gapps
-SAKURA_OPLAUNCHER=true
 
 # Inherit from laurel_sprout device
 $(call inherit-product, device/xiaomi/laurel_sprout/device.mk)
