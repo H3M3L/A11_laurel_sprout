@@ -227,12 +227,6 @@ PRODUCT_PACKAGES += \
     com.android.media.swcodec \
     libsfplugin_ccodec
 
-# CNE
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
-
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
